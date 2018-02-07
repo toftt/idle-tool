@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "name": "Chain Hammer",
+      "stars": 3,
+      "faction": "shadow",
+      "imageUrl": "/static/chain_hammer.png"
+    },
+    {
+      "name": "Poison Tongue",
+      "stars": 3,
+      "faction": "shadow",
+      "imageUrl": "/static/poison_tongue.png"
+    },
+    {
+      "name": "Shirley",
+      "stars": 3,
+      "faction": "shadow",
+      "imageUrl": "/static/shirley.png"
+    },
+    {
+      "name": "Dark Priest",
+      "stars": 3,
+      "faction": "shadow",
+      "imageUrl": "/static/dark_priest.png"
+    },
+    {
+      "name": "Ice Troll",
+      "stars": 3,
+      "faction": "shadow",
+      "imageUrl": "/static/ice_troll.png"
+    },
+    {
+      "name": "Reggie",
+      "stars": 3,
+      "faction": "forest",
+      "imageUrl": "/static/reggie.png"
+    },
+    {
+      "name": "Carver",
+      "stars": 3,
+      "faction": "forest",
+      "imageUrl": "/static/carver.png"
+    },
+    {
+      "name": "Tara's servant",
+      "stars": 3,
+      "faction": "forest",
+      "imageUrl": "/static/taras_servant.png"
+    },
+    {
+      "name": "Fire Fist",
+      "stars": 3,
+      "faction": "forest",
+      "imageUrl": "/static/fire_fist.png"
+    },
+    {
+      "name": "MK-03",
+      "stars": 3,
+      "faction": "forest",
+      "imageUrl": "/static/mk_03.png"
+    },
+    {
+      "name": "Abyss Guard",
+      "stars": 3,
+      "faction": "abyss",
+      "imageUrl": "/static/abyss_guard.png"
+    },
+    {
+      "name": "Wild Beast",
+      "stars": 3,
+      "faction": "abyss",
+      "imageUrl": "/static/wild_beast.png"
+    },
+    {
+      "name": "Succube",
+      "stars": 3,
+      "faction": "abyss",
+      "imageUrl": "/static/succube.png"
+    },
+    {
+      "name": "Flaming lips",
+      "stars": 3,
+      "faction": "abyss",
+      "imageUrl": "/static/flaming_lips.png"
+    },
+    {
+      "name": "Mirko",
+      "stars": 3,
+      "faction": "abyss",
+      "imageUrl": "/static/mirko.png"
+    }
+  ]
+}
