@@ -5,6 +5,7 @@
     />
     <ResultGrid
       :results="filteredHeroes"
+      @addHero="addHero"
     />
   </div>
 </template>
@@ -16,24 +17,12 @@ import take from 'lodash/take';
 import SearchInput from './SearchInput';
 import ResultGrid from './ResultGrid';
 
-import heroes from '../data/heroes.json';
-
-// const options = {
-//   keys: [
-//     {
-//       name: 'name',
-//       weight: 0.5,
-//     },
-//     {
-//       name: 'faction',
-//       weight: 0.5,
-//     },
-//   ],
-// };
+import heroJson from '../data/heroes.json';
 
 const options = { keys: ['name'] };
+const { data: heroData } = heroJson;
 
-const fuse = new Fuse(heroes.data, options);
+const fuse = new Fuse(heroData, options);
 
 export default {
   name: 'MainPage',
@@ -42,17 +31,28 @@ export default {
     ResultGrid,
   },
   data: function () {
+    const selectedHeroes = heroData.reduce((obj, hero) => {
+      obj[hero.name] = 0;
+      return obj;
+    }, {});
+
     return {
       searchQuery: '',
-      heroes: heroes.data,
+      selectedHeroes,
     };
   },
   computed: {
     filteredHeroes: function () {
-      if (!this.searchQuery) return this.heroes;
+      if (!this.searchQuery) return heroData;
 
       const filtered = fuse.search(this.searchQuery);
       return take(filtered, 100);
+    },
+  },
+
+  methods: {
+    addHero: function (hero) {
+      this.selectedHeroes[hero.name] += 1;
     },
   },
 };

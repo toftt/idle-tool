@@ -3,6 +3,7 @@
     <div
     v-for="hero in results"
     :key="hero.name"
+    @click="addHero(hero)"
     >
     <img :src="hero.imageUrl" />
     </div>
@@ -14,6 +15,11 @@ export default {
   name: 'ResultGrid',
   props: {
     results: Array,
+  },
+  methods: {
+    addHero: function (hero) {
+      this.$emit('addHero', hero);
+    },
   },
 };
 </script>
